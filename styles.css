@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lexend", sans-serif;
+}
+
+p {
+  font-family: "Lexend", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -78,6 +91,202 @@ ul {
   font-weight: 700;
   font-size: 30px;
   color: #ffffff;
+}
+
+.section-species {
+  background-image: url(./src/images/species-section.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.container-speciec-menu {
+  max-width: 1285px;
+  margin-left: 78px;
+  margin-right: 78px;
+}
+
+.list-films-menu {
+  display: flex;
+  gap: 35px;
+}
+
+.container-card-item-film {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.container-card-item-menu-list-one {
+  padding: 29px 31px 24px 27px;
+}
+
+.list-menu-item-one-card {
+  display: flex;
+  gap: 74px;
+  align-items: center;
+}
+
+.item-menu-one-card:last-child {
+  width: 203px;
+  text-align: center;
+}
+
+.img-one-card-film-menu {
+  width: 254px;
+  height: 289px;
+}
+
+.card-one-text-first {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.circle-red {
+  width: 54px;
+  height: 54px;
+}
+
+.card-one-text-second {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+  margin-top: 13px;
+}
+
+.container-card-item-menu-list-two {
+  padding: 62px 32px 63px 68px;
+}
+
+.list-menu-item-two-card {
+  display: flex;
+  gap: 95px;
+}
+
+.item-menu-two-card:last-child {
+  width: 203px;
+  text-align: center;
+}
+
+.card-two-text-first {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 116px;
+}
+
+.card-two-text-second {
+  font-weight: 700;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.img-three-card-film-menu {
+  padding: 42px 324px 41px 55px;
+}
+
+.img-four-card-film-menu {
+  padding: 57px 280px 66px 59px;
+}
+
+.img-five-card-film-menu {
+  padding: 16px 275px 19px 35px;
+}
+
+.img-six-card-film-menu {
+  padding: 76px 244px 77px 72px;
+}
+
+.section-characters {
+  background-image: url(./src/images/main-section-anakin.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 1px solid #ffffff;
+  position: relative;
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+  justify-content: right;
+}
+
+.characters-list-title {
+  display: flex;
+  align-items: end;
+  margin-bottom: 90px;
+  position: absolute;
+  width: calc(100% - 538px);
+}
+
+.characters-container-title {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+}
+
+.img-characters {
+  position: relative;
+  width: 762px;
+  height: 727px;
+  z-index: 0;
+  margin-left: -400px;
+  margin-bottom: -190px;
+}
+
+.title-characters {
+  font-weight: 700;
+  font-size: 60px;
+  color: #ffffff;
+  line-height: 1;
+  width: 390px;
+}
+
+.text-characters {
+  font-weight: 200;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.container-characters-info {
+  width: 710px;
+  height: 628px;
+  background-color: #141414;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.charanters-list-info-one {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  width: 179px;
+}
+
+.charanters-list-info-one .list-item-info-heading {
+  grid-column: 1/-1;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.charanters-list-info-one li:not(.list-item-info-heading) {
+  grid-column: span 1;
+}
+
+@media (min-width: 600px) {
+  .charanters-list-info-one {
+    grid-template-columns: repeat(3, 0fr);
+  }
+}
+.list-item-info-characters {
+  color: #ffffff;
+  text-align: right;
 }
 
 /*# sourceMappingURL=styles.css.map */
