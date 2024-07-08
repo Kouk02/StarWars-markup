@@ -11,6 +11,7 @@ $dove-gray-color: #6d6d6d;
 $cod-gray-color: #141414;
 //! :::fonts::
 $font-stack: 'Lexend', sans-serif;
+
 h1,
 h2,
 h3,
@@ -195,6 +196,7 @@ ul {
 
 .section-characters {
   background-image: url(./src/images/main-section-anakin.jpg);
+
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -262,7 +264,7 @@ ul {
   margin-left: auto;
   margin-right: 85px;
 }
-
+// !            one-list
 .characters-list-info-one {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -304,7 +306,7 @@ ul {
   font-weight: 400;
   color: $white-color;
 }
-
+// !            two-list
 .characters-list-info-two {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -338,7 +340,7 @@ ul {
 .characters-item-two-info:nth-child(n + 4) {
   grid-row: 2;
 }
-
+// !            three-list
 .charanters-list-info-three {
   display: grid;
   grid-template-columns: 1fr;
@@ -372,7 +374,7 @@ ul {
 .list-item-info-characters:not(:first-child) {
   font-size: 20px;
 }
-
+// !            four-list
 .charanters-list-info-four {
   display: grid;
   max-height: 97px;
@@ -408,7 +410,7 @@ ul {
 .list-item-info-characters-four:not(:first-child) {
   font-size: 20px;
 }
-
+// !            five-list
 .charanters-list-info-five {
   display: grid;
   max-height: 97px;
@@ -453,4 +455,86 @@ ul {
 
 .container-wall-characters {
   margin-right: 85px;
+}
+// !            favorite-section
+.section-favorite {
+  background-color: $cod-gray-color;
+}
+
+.favorite-search-form {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.input-search {
+  color: $dove-gray-color;
+  font-size: 15px;
+  font-weight: 400;
+  background-color: $black-color;
+  border-radius: 6px;
+  width: 806px;
+  height: 36px;
+  border: none;
+  margin-left: 160px;
+}
+
+.input-search {
+  padding-left: 18px;
+}
+
+.input-search:focus {
+  outline: none;
+}
+
+.container-favorite-card {
+  display: flex;
+  width: 1088px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.list-favorite-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 38px 40px;
+}
+.item-favorite-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 242px;
+  height: 329px;
+  background-color: $black-color;
+  border-radius: 6px;
+}
+.name-favorite-card {
+  font-size: 25px;
+  font-weight: 700;
+  color: $white-color;
+  margin-top: 28px;
+}
+
+.image-favorite-card {
+  width: 124px;
+  height: 170px;
+  margin-top: 24px;
+}
+.list-favorite-card-characters {
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  margin-top: 26px;
+}
+.item-favorite-card-characters {
+  font-size: 15px;
+  font-family: $font-stack;
+  font-weight: 300;
+  color: $dove-gray-color;
+}
+.footer-text {
+  text-align: center;
+  color: $alto-color;
+  font-size: 20px;
+  font-weight: 400px;
+  padding-bottom: 80px;
 }
